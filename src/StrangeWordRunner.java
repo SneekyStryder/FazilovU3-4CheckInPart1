@@ -45,5 +45,17 @@ public class StrangeWordRunner {
         System.out.println("-- word should NOT be changed: --");
         System.out.println(weird5.getWord()); // word unchanged
 
+        System.out.println("\n--- Testing Part D: wordPyramid ---");
+        StrangeWord weird6 = new StrangeWord("ABCDEFGHIJKLMNOPQRSTUVWX");
+        weird6.wordPyramid();
+        System.out.println("-- next pyramid --");
+        StrangeWord weird7 = new StrangeWord("APCOMPUTERSCIENCE");
+        weird7.wordPyramid();
+        System.out.println("-- next pyramid --");
+        StrangeWord weird8 = new StrangeWord("APCOMP");
+        weird8.wordPyramid();
+        System.out.println("-- word should NOT be changed: --");
+        System.out.println(weird8.getWord()); // word unchanged
+
     }
 }

@@ -83,6 +83,22 @@ public class StrangeWord {
      * in length than the previous level; the last level can be does not
      * need to be filled
      */
-    //public void wordPyramid()
-    //{ /* to be implemented in part (d) */ }
-}
+    public void wordPyramid() {
+        int rowVal = 1;
+        int left = word.length();
+        int counter = 0;
+        int i = 0;
+        while (left != 0) {
+                while (counter != rowVal && i < word.length()) {
+                    System.out.print(word.substring(i, i + 1));
+                    counter++;
+                    left--;
+                    i++;
+                }
+                counter = 0;
+                rowVal++;
+                System.out.println();
+            }
+        }
+    }
+
